@@ -1,0 +1,12 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+<body>
+<%= render 'layouts/header' %>
+<%if @users.nil?%>
+No User Found
+<%else%>
+<h1>This User</h1>
+<p><%=@users.inspect%></p>
+<%end%>
+</body>
+

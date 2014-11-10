@@ -1,0 +1,10 @@
+<body>
+<%= render 'layouts/header' %>
+<h1>List of User</h1>
+<p>This is my User</p>
+<p>
+    <%@users.each do |user|%>
+    <p><%=user.name%></p>
+    <%end%>
+</p>
+</body>

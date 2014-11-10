@@ -1,0 +1,25 @@
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+<h>Welcome to our sign up page!</h>
+<body>
+<%= render 'layouts/header' %>
+<div class="column">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+<p></p>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+<p></p>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+<p></p>
+<p></p>
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation %>
+<p></p>
+      <%= f.submit "Submit registration", class: "btn btn-primary" %>
+    <% end %>
+  </div>  
+</body>
